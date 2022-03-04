@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F2F2F2;
+        }
+
+        .cont {
+            text-align: center;
+            margin-top: 100px;
+
+        }
+
+        i {
+            font-size: 5rem;
+            border: 1px solid #0B173B;
+            color: blueviolet;
+            border-radius: 50%;
+            transition: background 0.5s;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        i:hover {
+            background-color: #6E6E6E;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cont">
+        <h1 style=" color: #FF8000; font-size: 50px;">Personal Assistant</h1>
+        <i onclick="recognition.start()" class="fas fa-microphone"></i>
+        <h4 style="color: #0B4C5F; font-weight: 300; font-size: 15px;" id="output"></h4>
+        <h4 style="color: darkred; font-weight: 600; font-size: 25px;" id="res"></h4>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
